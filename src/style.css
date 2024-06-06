@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  background: #152238;
 }
 
 .container {
@@ -10,13 +11,22 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+
   gap: 50px;
+}
+
+.grid-2-colums {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -60,22 +70,56 @@ header a {
   text-transform: uppercase;
   background-color: white;
   text-decoration: none;
-  color: #272044;
+  color: #192841;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #152238;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #152238;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #152238;
+  opacity: 0.7;
+}
+
+.resize-photo {
+  max-width: 100%;
+}
+
 footer {
   background-image: linear-gradient(
-      rgba(39, 32, 68, 0.8),
-      rgba(39, 32, 68, 0.8)
+      rgba(25, 40, 65, 0.8),
+      rgba(25, 40, 65, 0.8)
     ),
     url(../images/sundownbackgroundgreenland.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -122,5 +166,18 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
