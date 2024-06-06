@@ -172,6 +172,10 @@ main p {
   width: 100%;
 }
 
+.photo-gallery {
+  padding: 30px 0;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(25, 40, 65, 0.8),
